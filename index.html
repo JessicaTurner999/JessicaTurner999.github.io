@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>
+        Jessica Turner's Portfolio
+    </title>
+</head>
+    <body>
+        
+        <header>
+            <nav class="topnav" id="portfolioTopnav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#accomplishments">Accomplishments</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+            </nav>
+            <h1 id="header">Jessica Turner</h1>
+        </header>
+        <main>
+        <!- This is the about section->
+        <div id="about" >
+            
+                <a href="https://www.linkedin.com/in/jessica-turner-94936752/">
+               <figure>
+                    <img src="photojt.jpg" width="150" height="200" alt="Professional photo of Jessica Turner"/>
+                </figure>
+            </a>    
+            <h2 class="heading uppercase">About</h2>
+                <p>Jessica is a final year PhD student at the <em>Queensland University of Technology</em>. 
+                    <br>
+                    She is currently learning <strong>Norwegian</strong> and is an Accredited Practising Dietitian.</p>
+                    <p class="qual">Current Qualifications:</p>
+                    <ul>
+                        <li>Bachelor of Health Science (Nutrition & Dietetics), Hons.</li>
+                        <li>Master of Journalism (Communication)</li>
+                        <li>Doctorate of Philosophy (Expected Completion date: 2021)</li>
+                    </ul>
+                </div>
+            <!- this is the Skills section->
+            <div id="skills">
+            <h3>Skills</h3>
+                    <h4>Research Skills</h4>
+                    <ul class="list">
+                            <li>Quantatative and Qualatative Research experience</li>
+                            <li>Data Analysis - Anova, T-tests, Chi-Squared</li>
+                            <li>Recruitment</li>
+                    </ul>
+                    <h4>Interpersonal Skills</h4>
+                        <ul class="list">
+                            <li>Strong written and verbal communcation</li>
+                            <li>Good team player</li>
+                            <li>Excellent rapport buidling skills</li>
+                        </ul>
+                    <h4>Technical Skills</h4>
+                        <ul class="list">
+                            <li>Anthropomentric and dietary assessment</li>
+                            <li>Basic coding - html, CSS and Java</li>
+                            <li>Use of SPSS and JASP</li>
+                        </ul>
+        </div>
+        <!- this is the accomplishments section ->
+        <div id="accomplishments">
+            <h2>Accomplishments</h2>
+            <table id="table">
+                <tr>
+                    <th></th>
+                    <th scope="col">Publications</th>
+                    <th scope="col">Awards</th>
+                    <th scope="col">Presentations</th>
+                </tr>
+                <tr>
+                    <th scope="row">Year</th>
+                    <td>Paper for Study 1</td>
+                    <td>content</td>
+                    <td>content</td>
+                </tr>
+            </table>
+        </div>
+        <!- this is the Contact section ->
+        <div id="contact">
+            <h2 class="contactform" >Contact</h2>
+            <a href="https://www.linkedin.com/in/jessica-turner-94936752/" target="_blank">LinkedIn</a>
+            <br>
+            <a href="./contact.html"> Contact Page</a>
+            <form>
+                <label for="name"> Please enter your name:</label>
+                <br>
+                <input type="text" name="name" required>
+                <br>
+                <br>
+                <label for="email"> Email:</label>
+                <br>
+                <input type="text" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.{a-z}{2,}$"> 
+                <br>
+                <br>
+                <label for="mobile">Mobile (optional)</label>
+                <br>
+                <input type="number" name="mobile" id="mobile" pattern[0-9]>
+                <br>
+                <br>
+                <label for="textarea"> Leave your message below:</label>
+                <br>
+                <textarea id="message"Message rows="5" cols="30" required></textarea>
+                <br>
+                <br>
+                <button>Submit</button>
+            </form>
+        </div>
+        </main>
+        <script src="./nav.js"></script>
+    </body>
+</html>
